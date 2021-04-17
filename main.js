@@ -110,3 +110,5 @@ alert('thong bao')
 
 // // Lấy phân tử theo index
 // console.log(mang[2])
+var fullMyName = 'Nguyen dinh truong anh tuan';
+alert(fullMyName)
