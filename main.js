@@ -1,6 +1,6 @@
-var fullName = 'Nguyen Anh Tuan';
-var age = '26';
-var adDress = 'Thanh Hoa';
+// var fullName = 'Nguyen Anh Tuan';
+// var age = '26';
+// var adDress = 'Thanh Hoa';
 // Thông báo alert
 // alert(fullName);
 // alert(age);
@@ -12,9 +12,9 @@ var adDress = 'Thanh Hoa';
 //Thông báo có textbox nhập kí tự
 // prompt('alolol');
 
-setTimeout(function() {
-alert('thong bao')
-}, 4000)
+// setTimeout(function() {
+// alert('thong bao')
+// }, 4000)
 // setInterval(function() {
 //     confirm('khong tat duoc dau leeu  leu !! Xem cai cuc cut cho leu leu')
 // }, 2000);
@@ -22,7 +22,7 @@ alert('thong bao')
 // var b = 372;
 // if(a > b){
 //     console.log('Meo meo');
-// }
+// }    
 // else {
 // console.log('gau gau');
 // }
@@ -110,5 +110,33 @@ alert('thong bao')
 
 // // Lấy phân tử theo index
 // console.log(mang[2])
-var fullMyName = 'Nguyen dinh truong anh tuan';
-alert(fullMyName)
+// var fullMyName = 'Nguyen dinh truong anh tuan';
+// alert(fullMyName)
+
+//hàm
+// function ShowDialog(){
+//     alert('Hello');
+// };
+// ShowDialog();
+
+// //Tham số trong hàm
+// function writelog(mess){
+//     console.log(mess);
+// };
+// writelog('alo')
+
+// //Nhiều tham số trong hamf
+// function writelogg(mes1 ,  mes2){
+//     console.log(mes1);
+//     console.log(mes2);
+// };
+// writelogg('Alo', 'chao anh em');
+
+//Vòng lặp for
+function ahihi(){
+    for(var param of arguments){
+        console.log(param)
+    }
+}
+ahihi('anh', 'oi' , 'meo', 'meo');
+
