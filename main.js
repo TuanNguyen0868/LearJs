@@ -133,10 +133,118 @@
 // writelogg('Alo', 'chao anh em');
 
 //Vòng lặp for
-function ahihi(){
-    for(var param of arguments){
-        console.log(param)
-    }
-}
-ahihi('anh', 'oi' , 'meo', 'meo');
+// function ahihi(){
+//     for(var param of arguments){
+//         console.log(param)
+//     }
+// }
+// ahihi('anh', 'oi' , 'meo', 'meo');
 
+// //vong lap for chèn thêm ký tự
+// function ahoho(){
+//     var myString = '';
+//     for(var param1 of arguments){
+//         myString += `${param1} - `
+//     }
+//     console.log(myString);
+// }
+// ahoho('meo', 'meoo', 'meooooo', 'meooooooo')
+
+// //Return trả về giá trị ntn thjif kết quả sẽ là giá trị ntd
+// function ahuhu(a, b){
+//     return [a,b];
+// }
+// var result = ahuhu(2,8);
+// console.log(result)
+
+//Funtion trong funtion. tinh private
+// function funtest() {
+//     function funtest2() {
+//         console.log('Hello kity')
+//     }
+//     funtest2();
+// }
+// funtest();
+
+//3 loai funtion
+
+//declaration funtion
+// Declaration có thể goi được trước khi đinh nghĩa funtion
+// funtionde();
+// function funtionde(){
+//     console.log('Day la declaration funtion')
+// }
+//  //Expression Funtion 
+//  var funtionexp = function(){
+//      console.log('day là Expression funtion');
+//  }
+//  funtionexp();
+
+//  setTimeout(function(){
+
+//  });
+
+//  var Object = {
+//      myfunction : function(){
+
+//      }
+//  };
+
+ // Arow function : Hàm rút gọn
+//  hello1 = function() {
+//     return "Hello World!";
+//   };
+//  console.log(hello1());
+  
+//   // sau khi rút gọn
+//   hello2 = () => {
+//     return "Hello World!";
+//   };
+//   console.log(hello2());
+
+
+//
+//Object
+//
+// var emailKey = 'email';
+// var myInfo = {
+//     name: 'Nguyen Anh Tuan',
+//     age: 26,
+//     adDress: 'Thanh Hóa',
+//     [emailKey]: 'bububbo@gmail.com',
+//     //Phương thức / method
+//     getName: function() {
+//         return this.name;
+//     },
+//     //những loại còn lại là thuộc tính / property
+// }
+// //xoa một cặp key
+// delete myInfo.age;
+// console.log(myInfo);
+// console.log(myInfo.getName());
+
+//
+//Object Contructor / Xây dựng đối tượng
+//
+function User(firstName, lastName, avatar){
+
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.avatar = avatar;
+    //Thêm phương thức / method
+    this.getName = function(){
+        return `${this.firstName} ${this.lastName}`
+    }
+};
+var author = new User('Tuấn','nguyễn', 'avatar');
+var author2 = new User('Tuấn1','nguyễn1', 'avatar1');
+
+//Thêm thuộc tính riêng lẻ cho đối tượng
+author.title = 'meo meo meom  ';
+author2.comment = 'hi hihi hi hih hihi'
+//showw
+console.log(author);
+console.log(author2);
+
+console.log(author.getName());
+console.log(author2.getName());
